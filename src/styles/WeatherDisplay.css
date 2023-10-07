@@ -1,40 +1,57 @@
 /* WeatherDisplay.css */
 
-.weather-data {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
+.current-weather{
+  background: url("https://images.unsplash.com/photo-1519692933481-e162a57d6721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h2{
+  color: white;
+}
+.item{
+  color: white;
+}
+  .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tempreateContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tempratureImage{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
   }
   
-  @media (min-width: 768px) {
-    .weather-data {
-      grid-template-columns: repeat(5, 1fr);
-    }
+  .weatherimage{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
   }
   
-  .current-weather {
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 20px;
+  .weathertypebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
   
   .current-weather h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #fff;
   }
   
   .current-weather h6 {
     font-size: 16px;
-    color: #666;
+    color: #fff;
   }
   
   .days-forecast {

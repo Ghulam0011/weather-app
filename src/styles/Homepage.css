@@ -1,0 +1,7 @@
+.container > h1{
+    text-align: center;
+    color: rgb(220, 251, 255);
+    width: 100%;
+    background-color: orange;
+    padding: 18px 0px;
+}
