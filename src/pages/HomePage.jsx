@@ -29,7 +29,7 @@ const HomePage = () => {
       const currentWeatherData = data.list[0];
       const { weather } = data.list[0];
       const weatherType = weather[0].main;
-      const forecastData = data.list.slice(0, 5);
+      const forecastData = data.list.slice(0, 10);
 
       setCurrentWeather({
         cityName: data.city.name,
@@ -55,6 +55,7 @@ const HomePage = () => {
     }
   };
   const handleGetCurrentLocation = () => {
+    console.log(navigator);
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
